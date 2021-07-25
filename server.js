@@ -7,7 +7,7 @@ const fastify = require("fastify")({
   logger: false
 });
 
-fastify.get("/", async function(request, reply) {
+fastify.get("/notification", async function(request, reply) {
   reply.send(JSON.stringify({
     response: "Hello"
   }));
